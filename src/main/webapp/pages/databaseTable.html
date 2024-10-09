@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icono.ico" sizes="96x96">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <title>CRUD</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-custom">
+        <a class="navbar-brand imgLogo" href="../index.html"><img src="../assets/logo.png" alt="Logo" height="80"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>                
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="button-link" href="../pages/iniciarSesion.html">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="button-link" href="../pages/apiConexiones.html">Conexión API</a>
+            </li>
+            <li class="nav-item">
+              <a class="button-link" href="../pages/databaseTable.html">Conexión DB</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <h1 class="text-center my-5">
+        Users Table - Java Project
+    </h1>
+</header>
+<main class="container-fluid">
+    <section id="usersTable">
+        <div class="table-responsive">
+            <table class="table table-striped" id="users">
+                <tr class="table-primary">
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<script src="../js/getRequest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

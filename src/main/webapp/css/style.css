@@ -1,0 +1,337 @@
+:root{
+    --gris-footer: #3c3c3c;
+    --letras-color:#c6c6c6;
+    --gris-artico: #bfbdbc;
+}
+
+/*GLOBALES*/
+main {
+    flex: 1 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+footer {
+    flex-shrink: 0;
+}
+body{
+    background-color: #e9e9e9!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*NAV*/
+.logo-centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    margin-bottom: 20px; 
+}
+
+.imgLogo{
+    margin-left: 2%;
+}
+.menuNavegacion{
+    text-align: center;
+}
+
+.nav-bar{
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navegacion-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    transition: color 0.5s ease;
+}
+
+.nav-word{
+    font-size: larger;
+}
+
+.nav-link:hover{ /* hice que el link cambie de color cuando pasa el puntero por encima */
+    color: #b1afaf;
+    transition: color 0.5s ease;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: grey; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background-color: darkgrey;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+
+.link-logo{
+    display: inline-block; /* Ajustar el tamaño del enlace al tamaño del contenido (la imagen) */
+    width: 150px; /* Ancho del logo */
+    height: 150px; /* Alto del logo */
+    overflow: hidden; /* Ocultar cualquier contenido adicional que pueda exceder el tamaño del enlace */
+}
+
+.logo-inicio{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+
+.contenedor-logo{
+    text-align: center;
+}
+
+.card-style{
+    width: 25rem;
+}
+
+.navbar-custom {
+    background-color: #f0f0f0; 
+}
+
+/*
+*
+*   ERROR 404
+*
+*/ 
+
+.divImg{
+    text-align: center;
+    margin-top: 20vh;
+}
+.imgError404{
+    height: 50vh;
+    width: 30vw;
+}
+.pError{
+    text-align: center;
+}
+
+
+/*
+*
+*   ABOUT
+*
+*/
+
+.quienesSomos{
+    margin-top: 2%;
+}
+
+
+/*
+*
+*   FOOTER
+*
+*/ 
+
+.footer{
+    
+    font-size: 1.05rem;
+    border-radius: 2px;
+    background-color: #3c3c3c;
+    color: var(--letras-color);
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+}
+.div1Footer{
+    margin-top: 1%!important;     
+}
+.iconos{
+    font-size: 30px;
+}
+.hr{
+    margin: 0% 5% 0.5% 5%;
+}
+
+
+.divImg{
+    text-align: center;
+}
+
+.pError{
+    text-align: center;
+}
+
+.pDerechos{
+    margin-bottom: 0 !important;
+}
+
+.aFooter{
+    text-decoration: none;
+    color: var(--letras-color);
+}
+.aFooter:hover{
+    color: #FFFFFF;
+}
+
+
+/*
+*
+*   TRABAJA
+*
+*/ 
+.form{
+    border: #3c3c3c solid;
+    padding: 3%;
+    border-radius: 8px;
+    -webkit-box-shadow: -9px 4px 19px -1px rgba(60,60,60,0.86);
+    -moz-box-shadow: -9px 4px 19px -1px rgba(60,60,60,0.86);
+    box-shadow: -9px 4px 19px -1px rgba(60,60,60,0.86);
+    margin-bottom: 15%;
+}
+.card-image{
+    height: 15rem;
+}
+
+.hero {
+    color: #fff;
+    padding: 100px 0; 
+    text-align: center;
+  }
+
+
+/* Inicio Sesion*/
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: white;
+    padding: 6rem 1.875rem; 
+    border-radius: 1rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    width: 25rem;
+    text-align: center;
+    margin: 1.25rem auto;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px; 
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 15px; 
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px; 
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.login-form button:hover {
+    background-color: darkgrey;
+}
+
+.error {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+/* Botón para consumir API */
+
+.api-button {
+    background-color: #6c757d; 
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem; 
+    font-family: 'Arial', sans-serif; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.api-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05); 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 2rem; 
+}
+
+#resultado {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem; /* Incrementar el padding para hacer la tarjeta más grande */
+    text-align: center;
+    max-width: 400px; /* Incrementar el tamaño máximo */
+}
+
+.contact-card img {
+    border-radius: 50%;
+    width: 120px; /* Incrementar el tamaño de la imagen */
+    height: 120px; /* Incrementar el tamaño de la imagen */
+}
+
+.contact-card p {
+    margin: 0.5rem 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-card .name {
+    font-weight: bold;
+    font-size: 1.5rem; 
+}
+
+.contact-card .email, .contact-card .location {
+    color: #555;
+    font-size: 1rem;
+}
+
+html{
+    color: #212529;
+}
